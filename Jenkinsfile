@@ -29,7 +29,7 @@ pipeline {
         stage('Publish') {
             steps {
 		script{              
-                bat "dotnet publish --no--restore --configuration Release --output ${BUILD_DIR}"
+                bat "dotnet publish --no-restore --configuration Release --output ${BUILD_DIR}"
 		}
             }
         }
